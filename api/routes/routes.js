@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  
+
   // ads Routes
   var fbAnalyticaAds = require('../controllers/fbAnalyticaAdsController');
 
@@ -7,7 +7,7 @@ module.exports = function(app) {
     .get(fbAnalyticaAds.getAdTopics)
 
   app.route('/ads/history')
-    .get(fbAnalyticaAds.getAdHistory)
+    .get(fbAnalyticaAds.getAdsHistory)
 
   app.route('/ads/contact-info')
     .get(fbAnalyticaAds.getAdContactInfo)
