@@ -1,0 +1,28 @@
+{
+  "name": "fb-analytica",
+  "version": "1.0.0",
+  "description": "A REST API to query your personal facebook archive",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "debug": "nodemon --inspect-brk server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachbwh/fb-analytica.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zachbwh/fb-analytica/issues"
+  },
+  "homepage": "https://github.com/zachbwh/fb-analytica#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
