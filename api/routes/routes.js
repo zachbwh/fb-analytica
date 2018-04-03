@@ -13,10 +13,11 @@ module.exports = function(app) {
     .get(fbAnalyticaAds.getAdContactInfo)
   // END OF ads Routes
 
-  /*app.route('/apps')
-    .get(fbAnalytica.getApps)
+  var fbAnalyticaApps = require('../controllers/fbAnalyticaAppsController');
+  app.route('/apps')
+    .get(fbAnalyticaApps.getInstalledApps)
 
-  app.route('/contact-info')
+  /*app.route('/contact-info')
     .get(fbAnalytica.getContacts)
 
   app.route('/events')
